@@ -1,0 +1,14 @@
+SolidBot created by cjskaggscs
+
+---------------------------------------------------------------------
+|   SolidBot is a first-time effort to create a Discord bot using   |
+|   the discord.py API. Its features and intended purposes are not  |
+|   yet final, so changes are sure to follow.                       |
+---------------------------------------------------------------------
+
+
+
+Current features: 
+    -Simple arithmetic
+    -Random choice
+
