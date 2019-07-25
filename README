@@ -1,4 +1,4 @@
-SolidBot created by cjskaggscs
+SolidBot created by Cameron Skaggs https://github.com/cjskaggscs
 
 ---------------------------------------------------------------------
 |   SolidBot is a first-time effort to create a Discord bot using   |
@@ -11,4 +11,7 @@ SolidBot created by cjskaggscs
 Current features: 
     -Simple arithmetic
     -Random choice
+    -File uploading
 
+Future features:
+    -Standard deviation (oh lord)
