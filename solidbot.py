@@ -2,6 +2,7 @@ import math
 import re
 import random
 import discord
+import requests
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix = ';')
@@ -12,6 +13,21 @@ bot = commands.Bot(command_prefix = ';')
 async def on_ready():
     print('We have logged in as {0.user}'.format(bot))
     print('---------------')
+#    await send_bot_message()
+
+# async def send_bot_message():
+#     while True:
+#         text = input('Send message: ').split(' ', 1)
+#         channelID = int(text[0])
+#         messageText = text[1]
+#         try: 
+#             channel = bot.get_channel(channelID)
+#             await channel.send(messageText)
+#         except Exception:
+#             raise
+
+
+
 
 
 """
@@ -27,7 +43,7 @@ async def on_message(message):
                 await message.channel.send(file=discord.File(fp, 'ABOVE_ALL.wav'))
         elif re.search('^sharena,?\ destroy', message.content.lower()):
             with open('./assets/images/sharena-destroy.png', 'rb') as fp:
-                await message.channel.send('With pleasure.', file=discord.File(fp, 'ladies_first.png'))
+                await message.channel.send('__**With pleasure.**__', file=discord.File(fp, 'ladies_first.png'))
     elif message.content.lower() == 'what' and message.author == 68568019751673856:
         with open('./assets/audio/VOICE_Julia_Nagas_Blood_MAP_2.wav', 'rb') as fp:
             await message.channel.send(file=discord.File(fp, 'what.wav'))
@@ -152,16 +168,6 @@ async def stop(ctx):
         await ctx.send('Unable to leave voice channel.')
         print(e)
         return
-
-# @bot.command()
-# async def play(ctx):
-#     """Plays YouTube audio."""
-#     await ctx.send(';play command in progress, not yet working.')
-
-
-
-
-
 
 
 
