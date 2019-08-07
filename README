@@ -12,7 +12,8 @@ Current features:
     -Simple arithmetic
     -Random choice
     -File uploading
+    -Basic music bot features: play, stop, volume
 
 Future features:
-    -HTTP requests from FE growths
+    -Queries to local database for FE data
     -Time zone converter
